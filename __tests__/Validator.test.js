@@ -30,8 +30,8 @@ test('name with non-letter symbols, should fail', () => {
   expect(result).toBe(false);
 });
 
-test('name with two tabs inside, should pass', () => {
-  const name = 'helloworld';
+test('tab symbol inside, should fail', () => {
+  const name = 'helloworld';
   const result = Validator.validateUsername(name);
-  expect(result).toBe(true);
+  expect(result).toBe(false);
 });
