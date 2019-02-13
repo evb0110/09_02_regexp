@@ -1,7 +1,7 @@
 import Validator from '../src/js/Validator';
 
 test('name with spaces inside, should pass', () => {
-  const name = 'a b c-';
+  const name = 'ab c-';
   const result = Validator.validateUsername(name);
   expect(result).toBe(true);
 });
